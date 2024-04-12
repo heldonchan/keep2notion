@@ -42,7 +42,7 @@ jobs:
         run: |
             RANDOM_FILENAME=$(uuidgen).svg
             mv ./OUT_FOLDER/notion.svg ./OUT_FOLDER/$RANDOM_FILENAME
-           echo "Renamed file to $RANDOM_FILENAME"
-       - name: udpate heatmap 
+            echo "Renamed file to $RANDOM_FILENAME"
+      - name: udpate heatmap 
         run: |
             python -u scripts/update_heatmap.py
